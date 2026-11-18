@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { ClientLookup } from './ui/ClientLookup'
 import { ProjectLookup } from './ui/ProjectLookup'
 import logoAptus from '../assets/aptus_square_icon.png'
+import { MenuButton } from '@/components/MenuButton'
 
 type ViewType = 'month' | 'week' | 'day'
 type DisplayMode = 'list' | 'calendar'
@@ -51,6 +52,7 @@ export function CalendarHeader({
         <div className="flex items-center justify-center shrink-0 mr-4">
           <img src={logoAptus} alt="Aptus Logo" className="h-8 w-8 object-contain" />
         </div>
+        <MenuButton dark />
 
         {/* View Toggle (List vs Calendar) */}
         <div className="flex bg-white/10 rounded-md p-0.5 mr-2">
